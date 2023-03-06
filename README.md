@@ -1,2 +1,6 @@
 # FashionWeb
-it's a code about fashion website
+This website is building with ReactJS.
+
+
+
+By Nghiem Chi Bao, Pham Kim Chien
