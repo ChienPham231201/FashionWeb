@@ -6,7 +6,7 @@ import Section from '../assets/Data/Section.json'
 
 function NavBar() {
   return (
-    <Navbar className='NavBar' collapseOnSelect expand="lg">
+    <Navbar className='NavBar' collapseOnSelect expand="md">
       <Container>
         <Navbar.Brand href="#home">
             <img src='Images/logo.webp' alt='logo'/>

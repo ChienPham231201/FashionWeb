@@ -1,12 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
+import '../scss/Carousel.scss'
 
-function IndividualIntervalsExample() {
+function Carousels() {
   return (
     <Carousel>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          src="Images/SlideImg1.png"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -17,7 +18,7 @@ function IndividualIntervalsExample() {
       <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          src="Images/SlideImg2.png"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -28,7 +29,7 @@ function IndividualIntervalsExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          src="Images/SlideImg3.png"
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -42,4 +43,4 @@ function IndividualIntervalsExample() {
   );
 }
 
-export default IndividualIntervalsExample;
+export default Carousels;
