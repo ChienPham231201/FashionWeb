@@ -37,8 +37,8 @@
             font-size: 0.8rem;
             font-weight: 600;
             text-transform: uppercase;
-            margin-bottom: 10px;
-            transform: translateY(100%);
+            margin-bottom: 5px;
+            transform: translateY(80%);
         }
         .category_card-outline {
             width: 0;
@@ -72,4 +72,7 @@
             transition: all 0.5s;
         }
     }
+}
+.card {
+    border-radius: 0 !important;
 }

@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import CategoryCard from '../components/CategoryCard';
 import '../scss/HomePage.scss';
 import { CategoryImg1, CategoryImg2, CategoryImg3 } from '../assets/img';
+import ProductCard from '../components/ProductCard';
 const HomePage = () => {
     return (
         <Container className="home_layout">
@@ -30,6 +31,7 @@ const HomePage = () => {
                     />
                 </Col>
             </Row>
+            <ProductCard />
         </Container>
     );
 };
