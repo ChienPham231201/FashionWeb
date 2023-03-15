@@ -1,3 +1,38 @@
 .product_card {
-    width: 250px;
+    width: 100%;
+    margin: 15px;
+    .product_card-img {
+        width: 100%;
+    }
+    .product_card-body {
+        background-color: rgb(222, 244, 255);
+        .product_card-title {
+            font-size: 1rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .flex_price {
+            display: flex;
+            justify-content: space-between;
+            padding: unset;
+            .product_card-salePrice {
+                font-size: 0.9rem;
+                font-weight: 600;
+                margin: unset;
+            }
+            .product_card-price {
+                font-size: 0.8rem;
+                text-decoration: line-through;
+                margin: unset;
+                color: gray;
+            }
+        }
+        .flex_comment {
+            padding: unset;
+            justify-content: space-between;
+            display: flex;
+            color: gray;
+        }
+    }
 }
