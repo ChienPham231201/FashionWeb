@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './pages/HomePage';
-import NavBar from './components/NavBar';
+import NavBar from './components/navbar';
 function App() {
     return (
         <div className="App">

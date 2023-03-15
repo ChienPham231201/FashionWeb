@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../scss/NavBar.scss';
 import Section from '../assets/Data/Section.json';
 
-function NavBar() {
+const  NavBar = () => {
     return (
         <Navbar className="NavBar" collapseOnSelect expand="md">
             <Container>
