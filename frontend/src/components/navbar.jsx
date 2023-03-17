@@ -8,10 +8,10 @@ function NavBar() {
     return (
         <Navbar className="NavBar" collapseOnSelect expand="md">
             <Container>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Brand href="#home">
                     <img src="Images/logo.webp" alt="logo" />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="Nav_Section">
                         {Section.map((section) => (
