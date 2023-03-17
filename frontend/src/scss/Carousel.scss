@@ -3,3 +3,7 @@
         pointer-events: none;
     }
 }
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    
+    filter: invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg) brightness(89%) contrast(96%);
+}
