@@ -6,17 +6,19 @@
         color: black;
         margin: 0.2em;
     }
+    .brand{
+            height: 2.5vh;
+            
+    }
     .navbar-nav{
         flex-direction: row;
     }
     .Nav-Section{
         align-items: center;
     }
+
     .icon{
-        height: 1.5em;
-        width: 1.5em; 
-        
-           
+        height: 3.5vh;
     }
     .icon:hover{
         filter:  invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg) brightness(89%) contrast(96%) !important;
@@ -26,4 +28,10 @@
         color: #717fe0 !important;
         
     }
+}
+.offcanvas-header{
+    justify-content: end !important;
+}
+.offcanvas.show:not(.hiding){
+    width: 80vw;
 }
