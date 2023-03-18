@@ -1,30 +1,18 @@
 import Carousel from 'react-bootstrap/Carousel';
 import '../scss/Carousel.scss'
+import Data from '../assets/Data/Carousel.json';
 
 function Carousels() {
   return (
     <Carousel>
-      <Carousel.Item interval={500}>
+      {Data.map((data) => (
+        <Carousel.Item interval={500}>
         <img
-          className="d-block w-100"
-          src="Images/SlideImg1.png"
-          alt="First slide"
-        />
-      </Carousel.Item>
-      <Carousel.Item interval={500}>
-        <img
-          className="d-block w-100"
-          src="Images/SlideImg2.png"
-          alt="Second slide"
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="Images/SlideImg3.png"
-          alt="Third slide"
-        />
-      </Carousel.Item>
+          className="d-block w-100" 
+          src={data}
+          alt = "Slide"/>
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }
