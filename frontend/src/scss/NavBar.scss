@@ -1,38 +1,36 @@
-.NavBar{
+.NavBar {
     height: 13vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     font-weight: 500;
-    .nav-link{
+    .nav-link {
         color: black;
         margin: 0.2em;
     }
-    .brand{
-            height: 2.5vh;
-            
+    .brand {
+        width: 60%;
     }
-    .navbar-nav{
+    .navbar-nav {
         flex-direction: row;
     }
-    .Nav-Section{
+    .Nav-Section {
         align-items: center;
     }
 
-    .icon{
+    .icon {
         height: 3.5vh;
     }
-    .icon:hover{
-        filter:  invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg) brightness(89%) contrast(96%) !important;
-    
+    .icon:hover {
+        filter: invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg)
+            brightness(89%) contrast(96%) !important;
     }
-    .nav-link:hover{
+    .nav-link:hover {
         color: #717fe0 !important;
-        
     }
 }
-.offcanvas-header{
+.offcanvas-header {
     justify-content: end !important;
 }
-.offcanvas.show:not(.hiding){
+.offcanvas.show:not(.hiding) {
     width: 80vw;
 }
