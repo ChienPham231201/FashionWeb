@@ -1,9 +1,11 @@
 .policy {
     background-color: rgba(245, 245, 245, 0.495);
+    margin-top: 20px;
+    margin-bottom: 20px;
     .policy_card {
         display: flex;
         justify-content: flex-start;
-        margin: 10px;
+        margin: 10%;
         .icon {
             margin: 5px;
         }

@@ -1,0 +1,17 @@
+[
+    {
+        "img": "https://firebasestorage.googleapis.com/v0/b/bcstore-2023.appspot.com/o/CategoryImg1.webp?alt=media&token=939fecc1-cea5-4142-b490-02d2e7478930",
+        "title": "Đồ nam",
+        "text": "Trang phục mới hấp dẫn"
+    },
+    {
+        "img": "https://firebasestorage.googleapis.com/v0/b/bcstore-2023.appspot.com/o/CategoryImg2.webp?alt=media&token=ccb97424-dfc4-4b11-89e7-4b91ab6de3da",
+        "title": "Đồ nữ",
+        "text": "Trang phục mới hấp dẫn"
+    },
+    {
+        "img": "https://firebasestorage.googleapis.com/v0/b/bcstore-2023.appspot.com/o/CategoryImg3.webp?alt=media&token=461c84e1-45c0-43ea-89ea-4244e1d84615",
+        "title": "Phụ kiện",
+        "text": "Phụ kiện xu hướng mới"
+    }
+]

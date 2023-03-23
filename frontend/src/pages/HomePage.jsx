@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import CategoryCard from '../components/CategoryCard';
 import '../scss/HomePage.scss';
-import { CategoryImg1, CategoryImg2, CategoryImg3 } from '../assets/img';
+import TagCategory from '../assets/Data/TagCategory.json';
 import Carousels from '../components/Carousels';
 import ProductCard from '../components/ProductCard';
 import Policy from '../components/Policy';
@@ -16,35 +16,17 @@ const HomePage = () => {
             <h2 className="tag_category">Danh mục sản phẩm</h2>
             <Container>
                 <Row className="home_layout-row">
-                    <Col xs={12} lg={4} md={6} className="home_layout-col">
-                        <CategoryCard
-                            cardImg={CategoryImg1}
-                            cardTitle="Đồ nam"
-                            cardText="Trang phục mới hấp dẫn"
-                        />
-                    </Col>
-                    <Col xs={12} lg={4} md={6} className="home_layout-col">
-                        <CategoryCard
-                            cardImg={CategoryImg2}
-                            cardTitle="Đồ nữ"
-                            cardText="Trang phục mới hấp dẫn"
-                        />
-                    </Col>
-                    <Col xs={12} lg={4} md={6} className="home_layout-col">
-                        <CategoryCard
-                            cardImg={CategoryImg3}
-                            cardTitle="Phụ kiện"
-                            cardText="Phụ kiện xu hướng mới"
-                        />
-                    </Col>
+                    {TagCategory.map((category) => (
+                        <Col xs={12} lg={4} md={6} className="home_layout-col">
+                            <CategoryCard
+                                cardImg={category.img}
+                                cardTitle={category.title}
+                                cardText={category.text}
+                            />
+                        </Col>
+                    ))}
                 </Row>
                 <h2 className="tag_product">Sản phẩm nổi bật</h2>
-                <div className="btn_category">
-                    <Button variant="outline-primary">Đồ nam</Button>{' '}
-                    <Button variant="outline-primary">Đồ nữ</Button>{' '}
-                    <Button variant="outline-primary">Phụ kiện</Button>{' '}
-                </div>
-                <Filter/>
                 <Row className="home_layout-row">
                     <Col lg={3} md={6} className="home_layout-col">
                         <ProductCard />
