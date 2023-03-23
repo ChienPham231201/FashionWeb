@@ -13,6 +13,7 @@ const HomePage = () => {
     return (
         <div className="home_layout">
             <Carousels />
+            <Policy />
             <h2 className="tag_category">Danh mục sản phẩm</h2>
             <Container>
                 <Row className="home_layout-row">
@@ -47,7 +48,7 @@ const HomePage = () => {
                     <Button className="btn_load-more">Xem tất cả</Button>
                 </div>
             </Container>
-            <Policy />
+
         </div>
     );
 };
