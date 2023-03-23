@@ -41,6 +41,7 @@ const HomePage = () => {
                         <ProductCard />
                     </Col>
                 </Row>
+                <Filter/>
                 <div className="load_more">
                     <Button className="btn_load-more">Xem tất cả</Button>
                 </div>
