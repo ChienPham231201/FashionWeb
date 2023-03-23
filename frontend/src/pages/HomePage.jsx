@@ -27,6 +27,7 @@ const HomePage = () => {
                     ))}
                 </Row>
                 <h2 className="tag_product">Sản phẩm nổi bật</h2>
+                <Filter/>
                 <Row className="home_layout-row">
                     <Col lg={3} md={6} className="home_layout-col">
                         <ProductCard />
@@ -41,7 +42,7 @@ const HomePage = () => {
                         <ProductCard />
                     </Col>
                 </Row>
-                <Filter/>
+
                 <div className="load_more">
                     <Button className="btn_load-more">Xem tất cả</Button>
                 </div>
