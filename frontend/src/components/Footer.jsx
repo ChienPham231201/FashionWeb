@@ -35,9 +35,9 @@ const Footer = () => {
                         <li>Địa chỉ:</li>
                         <li>SDT:</li>
                         <div className="social-network">
-                            <FaFacebookF />
-                            <FaInstagram />
-                            <FaTwitter />
+                            <FaFacebookF size={18}/>
+                            <FaInstagram size={18}/>
+                            <FaTwitter size={18}/>
                         </div>
                     </ul>
                 </Col>
