@@ -7,6 +7,7 @@ import '../scss/HomePage.scss';
 import { CategoryImg1, CategoryImg2, CategoryImg3 } from '../assets/img';
 import Carousels from '../components/Carousels';
 import ProductCard from '../components/ProductCard';
+import Policy from '../components/Policy';
 const HomePage = () => {
     return (
         <div className="home_layout">
@@ -57,9 +58,10 @@ const HomePage = () => {
                     </Col>
                 </Row>
                 <div className="load_more">
-                    <Button className="btn_load-more">Xem thêm</Button>
+                    <Button className="btn_load-more">Xem tất cả</Button>
                 </div>
             </Container>
+            <Policy />
         </div>
     );
 };
