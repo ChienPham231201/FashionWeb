@@ -33,7 +33,7 @@ const Footer = () => {
                         <li>Để chúng tôi biết: </li>
                         <li>Địa chỉ:</li>
                         <li>SDT:</li>
-                        <div>
+                        <div className='social-network'>
                         <FaFacebookF/>
                         <FaInstagram/>
                         <FaTwitter/>
@@ -47,7 +47,7 @@ const Footer = () => {
                 <img src="Images/Icons/mastercard.png" alt="Mastercard" />
                 <img className='Momo' src="Images/Icons/momo.png" alt="Momo" />
             </Row>
-            <Row>Copyright ©2023 All rights reserved | This template is made with love by Colorlib</Row>
+            <Row className='Copyright'>Copyright ©2023 All rights reserved | This template is made with love by Colorlib</Row>
         </Container>
     );
 };
