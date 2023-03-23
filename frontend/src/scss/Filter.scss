@@ -1,0 +1,25 @@
+.Filter{
+    background-color: #F2F2F2;
+    color: #696969;
+    font-size: 15px;
+    padding: 4vh 3vw;
+    
+    .row{
+        width: 100%;  
+        margin: unset;     
+    }
+    ul{
+        list-style: none;
+        padding: 1vh 0;
+        margin: unset;
+        li{
+            padding-bottom: 1vh;
+        }
+    }
+    h1{
+        color: #333333;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+}

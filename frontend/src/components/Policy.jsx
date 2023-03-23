@@ -8,7 +8,7 @@ import { TbDiscount2 } from 'react-icons/tb';
 import '../scss/Policy.scss';
 const Policy = () => {
     return (
-        <Container className="policy">
+        <Container fluid className="policy">
             <Row>
                 <Col lg={3} md={6} xs={6}>
                     <div className="policy_card">

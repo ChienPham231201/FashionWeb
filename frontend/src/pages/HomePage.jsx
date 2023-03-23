@@ -8,6 +8,7 @@ import { CategoryImg1, CategoryImg2, CategoryImg3 } from '../assets/img';
 import Carousels from '../components/Carousels';
 import ProductCard from '../components/ProductCard';
 import Policy from '../components/Policy';
+import Filter from '../components/Filter'
 const HomePage = () => {
     return (
         <div className="home_layout">
@@ -43,6 +44,7 @@ const HomePage = () => {
                     <Button variant="outline-primary">Đồ nữ</Button>{' '}
                     <Button variant="outline-primary">Phụ kiện</Button>{' '}
                 </div>
+                <Filter/>
                 <Row className="home_layout-row">
                     <Col lg={3} md={6} className="home_layout-col">
                         <ProductCard />
