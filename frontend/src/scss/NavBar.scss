@@ -1,31 +1,38 @@
 .NavBar {
-    height: 13vh;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     font-weight: 500;
     .nav-link {
         color: black;
         margin: 0.2em;
     }
     .brand {
-        width: 60%;
+        margin-left: 3%;
+        img {
+            width: 80%;
+            margin: 0.5rem;
+        }
     }
     .navbar-nav {
         flex-direction: row;
+        margin-right: 3%;
+        font-size: 18px;
     }
     .Nav-Section {
         align-items: center;
     }
 
     .icon {
-        height: 3.5vh;
+        font-size: 28px;
     }
     .icon:hover {
         filter: invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg)
             brightness(89%) contrast(96%) !important;
     }
     .nav-link:hover {
-        color: #717fe0 !important;
+        color: #5271ff !important;
     }
 }
 .offcanvas-header {
