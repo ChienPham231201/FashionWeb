@@ -10,7 +10,7 @@ const NavBar = () => {
         <Navbar className="NavBar" expand="md">
             <Container fluid>
                 <Navbar.Brand href="#home">
-                    <img className="brand" src="Images/logo.webp" alt="logo" />
+                    <img className="brand" src="Images/logo.png" alt="logo" />
                 </Navbar.Brand>
 
                 <Navbar.Offcanvas
