@@ -50,7 +50,7 @@ const Footer = () => {
             </Row>
             <Row className="Copyright">
                 Copyright ©2023 All rights reserved | This template is made with
-                love by Colorlib
+                love by Bảo and Chiến
             </Row>
         </Container>
     );
