@@ -35,11 +35,11 @@ const Footer = () => {
                             <li>Để chúng tôi biết: </li>
                             <li>Địa chỉ:</li>
                             <li>SDT:</li>
-                            <div className="social-network">
+                            <li className="social-network">
                                 <FaFacebookF size={18}/>
                                 <FaInstagram size={18}/>
                                 <FaTwitter size={18}/>
-                            </div>
+                            </li>
                         </ul>
                     </Col>
                 </Row>

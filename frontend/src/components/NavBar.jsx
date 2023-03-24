@@ -13,11 +13,10 @@ const NavBar = () => {
     return (
         <Navbar className="NavBar" expand="md">
             <Container fluid>
-                <Navbar.Brand className="brand" href="/">
-                    <Link to={"/"}>
+
+                <Link className="brand navbar-brand" to={'/'}>
                     <img src={logo} alt="logo" />
-                    </Link>
-                </Navbar.Brand>
+                </Link>
 
                 <Navbar.Offcanvas
                     id={`offCanvas`}
@@ -27,9 +26,13 @@ const NavBar = () => {
                     <Offcanvas.Header closeButton></Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="Nav_Section">
-                            {Data.map((data , i) => (
-                                <Link className='nav-link' key={i} to={"/" + data.Name}>
-                                    {data.Show}  
+                            {Data.map((data, i) => (
+                                <Link
+                                    className="nav-link"
+                                    key={i}
+                                    to={'/' + data.Name}
+                                >
+                                    {data.Show}
                                 </Link>
                             ))}
                         </Nav>
@@ -37,13 +40,13 @@ const NavBar = () => {
                 </Navbar.Offcanvas>
 
                 <Nav>
-                    <Nav.Link href="#deets">
+                    <Nav.Link href="/">
                         <BiSearch className="icon" />
                     </Nav.Link>
-                    <Nav.Link href="#memes">
+                    <Nav.Link href="/">
                         <BiCart className="icon" />
                     </Nav.Link>
-                    <Nav.Link href="#memes">
+                    <Nav.Link href="/">
                         <MdFavoriteBorder className="icon" />
                     </Nav.Link>
                 </Nav>
