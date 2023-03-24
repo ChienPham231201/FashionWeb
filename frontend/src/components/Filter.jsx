@@ -8,13 +8,13 @@ const Filter = () => {
     return (
         <Container fluid className="Filter">
             <Row>
-                {Data.map((data) => 
+                {Data.map((data,i) => 
                 (
                     <Col sm>
-                    <h1>{data.Name}</h1>
-                    <ul>
-                        {data.Array.map((data1) => (
-                                <li>{data1}</li>
+                    <h1 key={i}>{data.Name}</h1>
+                    <ul key={i}>
+                        {data.Array.map((data1 , j) => (
+                                <li key={j}>{data1}</li>
                         ))}
                     </ul>
                     </Col>

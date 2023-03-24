@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../scss/NavBar.scss';
-import Section from '../assets/Data/Section.json';
+import Data from '../assets/Data/NavBar.json';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { BiSearch, BiCart } from 'react-icons/bi';
 import { MdFavoriteBorder } from 'react-icons/md';
@@ -13,7 +14,9 @@ const NavBar = () => {
         <Navbar className="NavBar" expand="md">
             <Container fluid>
                 <Navbar.Brand className="brand" href="/">
+                    <Link to={"/"}>
                     <img src={logo} alt="logo" />
+                    </Link>
                 </Navbar.Brand>
 
                 <Navbar.Offcanvas
@@ -24,8 +27,10 @@ const NavBar = () => {
                     <Offcanvas.Header closeButton></Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="Nav_Section">
-                            {Section.map((section) => (
-                                <Nav.Link>{section}</Nav.Link>
+                            {Data.map((data , i) => (
+                                <Link className='nav-link' key={i} to={"/" + data.Name}>
+                                    {data.Show}  
+                                </Link>
                             ))}
                         </Nav>
                     </Offcanvas.Body>
