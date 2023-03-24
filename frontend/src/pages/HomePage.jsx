@@ -8,7 +8,7 @@ import TagCategory from '../assets/Data/TagCategory.json';
 import Carousels from '../components/Carousels';
 import ProductCard from '../components/ProductCard';
 import Policy from '../components/Policy';
-import Filter from '../components/Filter'
+import Filter from '../components/Filter';
 const HomePage = () => {
     return (
         <div className="home_layout">
@@ -28,7 +28,7 @@ const HomePage = () => {
                     ))}
                 </Row>
                 <h2 className="tag_product">Sản phẩm nổi bật</h2>
-                <Filter/>
+                <Filter />
                 <Row className="home_layout-row">
                     <Col lg={3} md={6} className="home_layout-col">
                         <ProductCard />
@@ -48,7 +48,6 @@ const HomePage = () => {
                     <Button className="btn_load-more">Xem tất cả</Button>
                 </div>
             </Container>
-
         </div>
     );
 };
