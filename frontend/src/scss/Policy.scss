@@ -1,22 +1,39 @@
 .policy {
     background-color: rgba(245, 245, 245, 0.495);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    padding: 3vh 0;
     .policy_card {
         display: flex;
         justify-content: flex-start;
-        margin: 10%;
+        margin: 5%;
+        align-items: center;
         .icon {
             margin: 5px;
         }
         .policy_card-content {
-            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 1vw;
             h4 {
+                margin: 0;
                 font-size: 1rem;
             }
             p {
+                margin: 0;
+                display: none;
                 font-size: 14px;
                 color: rgb(90, 90, 90);
+            }
+        }
+    }
+    .col-5 {
+        box-sizing: unset;
+    }
+    @media (min-width: 768px){
+        .col-md {
+            p{
+                display: block!important;
             }
         }
     }

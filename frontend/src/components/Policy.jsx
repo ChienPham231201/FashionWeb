@@ -10,7 +10,7 @@ const Policy = () => {
     return (
         <Container fluid className="policy">
             <Row>
-                <Col lg={3} md={6} xs={6}>
+                <Col md xs={5}>
                     <div className="policy_card">
                         <BiTransferAlt fontSize={40} className="icon" />
                         <div className="policy_card-content">
@@ -19,7 +19,7 @@ const Policy = () => {
                         </div>
                     </div>
                 </Col>
-                <Col lg={3} md={6} xs={6}>
+                <Col md xs={5}>
                     <div className="policy_card">
                         <AiOutlineSafetyCertificate
                             fontSize={40}
@@ -31,7 +31,7 @@ const Policy = () => {
                         </div>
                     </div>
                 </Col>
-                <Col lg={3} md={6} xs={6}>
+                <Col md xs={5}>
                     <div className="policy_card">
                         <BiPhoneCall fontSize={40} className="icon" />
                         <div className="policy_card-content">
@@ -42,7 +42,7 @@ const Policy = () => {
                         </div>
                     </div>
                 </Col>
-                <Col lg={3} md={6} xs={6}>
+                <Col md xs={5}>
                     <div className="policy_card">
                         <TbDiscount2 fontSize={40} className="icon" />
                         <div className="policy_card-content">
