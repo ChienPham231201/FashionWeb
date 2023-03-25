@@ -33,7 +33,7 @@
         filter: invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg)
             brightness(89%) contrast(96%) !important;
     }
-    .nav-link:hover {
+    .nav-link:hover,.nav-Link:active {
         color: #5271ff !important;
     }
 
@@ -43,4 +43,7 @@
 }
 .offcanvas.show:not(.hiding) {
     width: 80vw;
+}
+.active{
+    color: #5271ff !important;
 }

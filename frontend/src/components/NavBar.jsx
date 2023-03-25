@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,10 +10,10 @@ import { MdFavoriteBorder } from 'react-icons/md';
 import { logo } from '../assets/img';
 
 const NavBar = () => {
+
     return (
         <Navbar className="NavBar" expand="md">
             <Container fluid>
-
                 <Link className="brand navbar-brand" to={'/'}>
                     <img src={logo} alt="logo" />
                 </Link>
@@ -27,13 +27,13 @@ const NavBar = () => {
                     <Offcanvas.Body>
                         <Nav className="Nav_Section">
                             {Data.map((data, i) => (
-                                <Link
+                                <NavLink
                                     className="nav-link"
                                     key={i}
                                     to={'/' + data.Name}
                                 >
                                     {data.Show}
-                                </Link>
+                                </NavLink>
                             ))}
                         </Nav>
                     </Offcanvas.Body>
