@@ -4,5 +4,10 @@
         color: unset;
         text-decoration: unset;
     }
-
+    .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #222222;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #5271ff;
+    }
 }

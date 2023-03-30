@@ -12,7 +12,7 @@ import { logo } from '../assets/img';
 const NavBar = () => {
 
     return (
-        <Navbar className="NavBar" expand="md">
+        <Navbar className="NavBar" expand="md" collapseOnSelect>
             <Container fluid>
                 <Link className="brand navbar-brand" to={'/'}>
                     <img src={logo} alt="logo" />

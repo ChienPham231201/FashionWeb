@@ -1,9 +1,11 @@
-.carousel-inner{
-    img{
+.carousel-inner {
+    img {
+        height: 35vmax;
+        object-fit: cover;
         pointer-events: none;
     }
 }
-.carousel-control-next:hover,.carousel-control-prev:hover{
-    filter: invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg)
-            brightness(89%) contrast(96%) !important;
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    filter: invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg) brightness(89%) contrast(96%) !important;
 }
