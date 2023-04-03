@@ -14,15 +14,15 @@ const ContactPage = () => {
             <div className="BackGround">
                 <p className="Name">Liên hệ</p>
             </div>
-            <Container>
-                <Row>
-                    <Col className='Form'>
+            <Container className="ContactPage">
+                <Row className='Contact'>
+                    <Col className="Form">
                         <h2>Gửi thư cho chúng tôi</h2>
 
                         <FloatingLabel
                             controlId="floatingInput"
                             label="Email của bạn"
-                            className="mb-3"
+                            className="Input"
                         >
                             <Form.Control
                                 type="email"
@@ -32,7 +32,8 @@ const ContactPage = () => {
 
                         <FloatingLabel
                             controlId="floatingPassword"
-                            label="Password"
+                            label="Chúng tôi có thể giúp gì?"
+                            className="Input"
                         >
                             <Form.Control
                                 as="textarea"
@@ -42,24 +43,28 @@ const ContactPage = () => {
 
                         <Button className="submit">Gửi</Button>
                     </Col>
-                    <Col>
-                        <div className='Location'>
+                    <Col className="Info">
+                        <div className="Location Block">
                             <img src={locationIcon} alt="location icon" />
-                            <h2>Địa chỉ</h2>
+                            <div className='Text'>
+                                <h2>Địa chỉ</h2>
+                                <p>Trường Đại học công nghệ thông tin</p>
+                            </div>
                         </div>
-
-                        <p>Trường Đại học công nghệ thông tin</p>
-
-                        <div className='Phone'>
+                        <div className="Phone Block">
                             <img src={phoneIcon} alt="location icon" />
-                            <h2>Hãy gọi cho chúng tôi</h2>
+                            <div className='Text'>
+                                <h2>Hãy gọi cho chúng tôi</h2>
+                                <p>+012345678</p>
+                            </div>
                         </div>
-                        <p>+012345678</p>
-                        <div className='Mail'>
+                        <div className="Mail Block">
                             <img src={mailIcon} alt="mail icon" />
-                            <h2>Hỗ trợ</h2>
+                            <div className='Text'>
+                                <h2>Hỗ trợ</h2>
+                                <p>example@example.com</p>
+                            </div>
                         </div>
-                        <p>example@example.com</p>
                     </Col>
                 </Row>
             </Container>
