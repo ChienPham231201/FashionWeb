@@ -85,7 +85,7 @@ const CardDetail = () => {
             <Container className="tab_detail">
                 <Tabs defaultActiveKey="info">
                     <Tab eventKey="info" title="Thông tin chi tiết">
-                        ok
+                        <div className="info_content">ok</div>
                     </Tab>
                     <Tab eventKey="comment" title="Đánh giá">
                         12
