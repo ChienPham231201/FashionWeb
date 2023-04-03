@@ -5,7 +5,7 @@
     left: 0;
     z-index: 999;
     font-weight: 500;
-    box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.2);
     .nav-link {
         color: black;
         margin: 0.2em;
@@ -13,21 +13,21 @@
     .brand {
         margin-left: 3%;
         img {
-            height: 6vh;
+            height: 4.5vh;
             margin: 0.5rem;
         }
     }
     .navbar-nav {
         flex-direction: row;
         margin-right: 3%;
-        font-size: 18px;
+        font-size: 16px;
     }
     .Nav-Section {
         align-items: center;
     }
 
     .icon {
-        font-size: 28px;
+        font-size: 24px;
     }
     .icon:hover {
         filter: invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg)
@@ -36,7 +36,6 @@
     .nav-link:hover {
         color: #5271ff !important;
     }
-
 }
 .offcanvas-header {
     justify-content: end !important;
