@@ -9,8 +9,8 @@ import '../scss/Policy.scss';
 const Policy = () => {
     return (
         <Container fluid className="policy">
-            <Row>
-                <Col md xs={5}>
+            <Row className='PolicyRow' >
+                <Col md xs={5} >
                     <div className="policy_card">
                         <BiTransferAlt fontSize={40} className="icon" />
                         <div className="policy_card-content">

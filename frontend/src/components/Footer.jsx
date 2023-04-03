@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <footer>
             <Container fluid className="Footer">
-                <Row>
+                <Row className='FooterRow'>
                     <Col>
                         <h1> Phân Loại</h1>
                         <ul>
@@ -43,13 +43,13 @@ const Footer = () => {
                         </ul>
                     </Col>
                 </Row>
-                <Row>
+                <Row className='FooterRow'>
                     <img src={paypal} alt="Paypal" />
                     <img src={visa} alt="Visa" />
                     <img src={mastercard} alt="Mastercard" />
                     <img className="Momo" src={momo} alt="Momo" />
                 </Row>
-                <Row className="Copyright">
+                <Row className="Copyright FooterRow">
                     Copyright ©2023 All rights reserved | This template is made with
                     love by Bảo and Chiến
                 </Row>
