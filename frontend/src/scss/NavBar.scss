@@ -20,17 +20,18 @@
     .navbar-nav {
         flex-direction: row;
         margin-right: 3%;
-        font-size: 18px;
+        font-size: 16px;
     }
     .Nav-Section {
         align-items: center;
     }
 
     .icon {
-        font-size: 28px;
+        font-size: 24px;
     }
     .icon:hover {
-        filter: invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg) brightness(89%) contrast(96%) !important;
+        filter: invert(54%) sepia(77%) saturate(1764%) hue-rotate(206deg)
+            brightness(89%) contrast(96%) !important;
     }
     .nav-link:hover,
     .nav-Link:active {

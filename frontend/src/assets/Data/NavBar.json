@@ -6,11 +6,11 @@
     {
         "Name": "Shop",
         "Show": "Shop"
-    }, 
+    },
     {
-        "Name": "Blog",
+        "Name": "detail",
         "Show": "Blog"
-    }, 
+    },
     {
         "Name": "About",
         "Show": "Về chúng tôi"
@@ -18,5 +18,5 @@
     {
         "Name": "Contact",
         "Show": "Liên hệ"
-    } 
+    }
 ]
