@@ -1,0 +1,22 @@
+.AboutPage.row {
+        margin: 4vmax 4vmax;
+        img {
+            width: 100%;
+        }
+    }
+.BackGround {
+    background-image: url("../assets/Images/background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 18vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Name {
+        font-size: 4vmax;
+        font-weight: 700;
+        color: white;
+        margin: unset;
+    }
+}

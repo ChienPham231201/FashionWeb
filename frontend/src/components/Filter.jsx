@@ -10,7 +10,7 @@ const Filter = () => {
             <Row>
                 {Data.map((data,i) => 
                 (
-                    <Col sm>
+                    <Col md sm>
                     <h1 key={i}>{data.Name}</h1>
                     <ul key={i}>
                         {data.Array.map((data1 , j) => (
