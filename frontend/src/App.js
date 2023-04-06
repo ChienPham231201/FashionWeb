@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import CardDetail from './components/CardDetail';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
+import LoginPage from './pages/LoginPage';
 
 const ShopPage = lazy(() => import('./pages/ShopPage'));
 
@@ -23,6 +24,7 @@ function App() {
                     <Route path="/shop" element={<ShopPage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/login" element={<LoginPage />} />
                 </Routes>
             </Suspense>
             <Footer />
