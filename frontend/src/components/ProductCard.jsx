@@ -1,38 +1,69 @@
 import Card from 'react-bootstrap/Card';
 import '../assets/img';
 import StarRatings from 'react-star-ratings';
-import { Product1, Product2, Product3 } from '../assets/img';
 import '../scss/ProductCard.scss';
-const ProductCard = () => {
+import Button from 'react-bootstrap/Button';
+import { useEffect, useState } from 'react';
+import toSlug from '../assets/toSlug';
+const ProductCard = ({ listImg, name, salePrice, price, rating, comment }) => {
+    const [imgUrl, setImgUrl] = useState(listImg[0]);
+    const [active, setActive] = useState(toSlug(name) + '0');
+    const handleHover = () => {
+        document.querySelector(`#${active}`).classList.add('img_active');
+    };
+    const changeImg = (i) => {
+        document.querySelector(`#${active}`).classList.remove('img_active');
+        setActive(toSlug(name) + i);
+        setImgUrl(listImg[i]);
+    };
+    useEffect(() => {
+        document.querySelector(`#${active}`).classList.add('img_active');
+    });
     return (
-        <Card className="product_card">
-            <Card.Img className="product_card-img" src={Product1} />
+        <Card
+            className="product_card"
+            id={toSlug(name)}
+            onMouseEnter={handleHover}
+        >
+            <Card.Img className="product_card-img" src={imgUrl} />
+            <Button className="btn-addToCard" variant="info">
+                Thêm vào giỏ
+            </Button>
             <Card.Body className="product_card-body">
                 <Card.Body className="product_color">
-                    <Card.Img className="color_img" src={Product1} />
-                    <Card.Img className="color_img" src={Product2} />
-                    <Card.Img className="color_img" src={Product3} />
+                    {listImg.map((img, index) => (
+                        <Card.Img
+                            onClick={() => {
+                                changeImg(index);
+                            }}
+                            key={index}
+                            id={toSlug(name) + index}
+                            className="color_img"
+                            src={img}
+                        />
+                    ))}
                 </Card.Body>
-                <Card.Title className="product_card-title">
-                    Áo khoác nam U1sdhfsdfhdsfhdfh
-                </Card.Title>
+
+                <Card.Title className="product_card-title">{name}</Card.Title>
                 <Card.Body className="flex_price">
                     <Card.Text className="product_card-salePrice">
-                        150.000 VNĐ
+                        {salePrice + ' VNĐ'}
                     </Card.Text>
                     <Card.Text className="product_card-price">
-                        200.000 VNĐ
+                        {price + 'VNĐ'}
                     </Card.Text>
                 </Card.Body>
                 <Card.Body className="flex_comment">
                     <StarRatings
                         name="rating"
-                        rating={4}
+                        rating={rating}
                         starRatedColor="gold"
-                        starDimension="1rem"
+                        starDimension="1.1rem"
                         starSpacing="0"
                     />
-                    <Card.Text className="text_comment">(0 nhận xét)</Card.Text>
+                    <Card.Text className="text_comment">
+                        ({comment.length + ' nhận xét'})
+                    </Card.Text>
                 </Card.Body>
             </Card.Body>
         </Card>
