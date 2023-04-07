@@ -46,7 +46,7 @@ const NavBar = () => {
                     <Nav.Link href="/">
                         <BiCart className="icon" />
                     </Nav.Link>
-                    <Nav.Link href="/">
+                    <Nav.Link as={Link} to={'/Login'}>
                         <MdFavoriteBorder className="icon" />
                     </Nav.Link>
                 </Nav>
