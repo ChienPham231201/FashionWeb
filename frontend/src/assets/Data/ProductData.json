@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "name": "áo dshf shfu ihsf dsf 1",
+        "image": [
+            "https://bucket.nhanh.vn/d0f3ca-7136/ps/20230313_2vOJwjg5.jpg",
+            "https://traffic-edge07.cdn.vncdn.io/cdn-pos/d0f3ca-7136/ps/20230307_we7QIhZbKUAP4VvG.jpeg",
+            "https://bucket.nhanh.vn/d0f3ca-7136/ps/20230313_bYikldF7.jpg"
+        ],
+        "size": ["X", "M"],
+        "price": 300000,
+        "salePrice": 200000,
+        "rating": 5,
+        "comment": ["1", "2"],
+        "stock": 10,
+        "category": ["đồ nam", "áo sơ mi"],
+        "content": "ihi sdifidf dsifhdisf"
+    },
+    {
+        "id": "2",
+        "name": "áo hdsufh uhfuds 2",
+        "image": [
+            "https://traffic-edge07.cdn.vncdn.io/cdn-pos/d0f3ca-7136/ps/20230307_we7QIhZbKUAP4VvG.jpeg",
+            "https://bucket.nhanh.vn/d0f3ca-7136/ps/20230313_bYikldF7.jpg"
+        ],
+        "size": ["X", "M"],
+        "price": 300000,
+        "salePrice": 200000,
+        "rating": 2.5,
+        "comment": ["1", "2"],
+        "stock": 10,
+        "category": ["đồ nam", "áo sơ mi"],
+        "content": "ihi sdifidf dsifhdisf"
+    }
+]

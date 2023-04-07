@@ -1,25 +1,35 @@
-.Filter{
-    background-color: #F2F2F2;
+.Filter {
+    background-color: #f2f2f2;
     color: #696969;
     font-size: 15px;
     padding: 4vh 3vw;
-    
-    .row{
-        width: 100%;  
-        margin: unset;     
+    position: relative;
+    display: none;
+    overflow: hidden;
+
+    .row {
+        width: 100%;
+        margin: unset;
     }
-    ul{
+    ul {
         list-style: none;
         padding: 1vh 0;
         margin: unset;
-        li{
+        li {
             padding-bottom: 1vh;
+            cursor: pointer;
+        }
+        li:hover {
+            color: #5271ff;
         }
     }
-    h1{
+    h1 {
         color: #333333;
         font-size: 18px;
         text-transform: capitalize;
         font-weight: bold;
     }
+}
+.filter_display {
+    display: block;
 }

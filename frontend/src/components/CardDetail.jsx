@@ -8,7 +8,6 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import { Product1, Product2, Product3 } from '../assets/img';
 import '../scss/CardDetail.scss';
 const CardDetail = () => {
     return (
@@ -16,7 +15,10 @@ const CardDetail = () => {
             <Container className="product_detail">
                 <Row className="row">
                     <Col lg={5} className="col">
-                        <Image className="detail_img" src={Product1} />
+                        <Image
+                            className="detail_img"
+                            src="https://bucket.nhanh.vn/d0f3ca-7136/ps/20230313_2vOJwjg5.jpg"
+                        />
                     </Col>
                     <Col lg={7} className="col">
                         <div className="detail_content">
@@ -41,8 +43,10 @@ const CardDetail = () => {
                             <div className="color">
                                 <h4>Màu sắc:</h4>
                                 <div className="color_img">
-                                    <img src={Product2} alt="ok" />
-                                    <img src={Product3} alt="ok" />
+                                    <img
+                                        src="https://bucket.nhanh.vn/d0f3ca-7136/ps/20230313_2vOJwjg5.jpg"
+                                        alt="ok"
+                                    />
                                 </div>
                             </div>
                             <div className="size">

@@ -1,35 +1,88 @@
 [
     {
-      "Name": "Phân loại",
-      "Array": 
-        [
-            "Tất cả",
-            "Phổ biến",
-            "Mới nhất",
-            "Đánh giá",
-            "Giá: cao đến thấp",
-            "Giá: thấp đến cao"
+        "name": "category",
+        "show": "Phân loại",
+        "Object": [
+            {
+                "name": "default-category",
+                "show": "Tất cả"
+            },
+            {
+                "name": "hot",
+                "show": "Phổ biến"
+            },
+            {
+                "name": "new",
+                "show": "Mới nhất"
+            },
+            {
+                "name": "rating",
+                "show": "Đánh giá"
+            },
+            {
+                "name": "low-high",
+                "show": "Giá: thấp đến cao"
+            },
+            {
+                "name": "high-low",
+                "show": "Giá: cao đến thấp"
+            }
         ]
     },
     {
-      "Name": "Giá",
-      "Array": 
-        [
-            "Tất cả",
-            "0 - 100k",
-            "100k - 200k ",
-            "200k - 500k",
-            "500k+"
+        "name": "price",
+        "show": "Giá",
+        "Object": [
+            {
+                "name": "default-price",
+                "show": "Tất cả"
+            },
+            {
+                "name": "price1",
+                "show": "0 - 100k"
+            },
+            {
+                "name": "price2",
+                "show": "100k - 200k"
+            },
+            {
+                "name": "price3",
+                "show": "200k - 500k"
+            },
+            {
+                "name": "price4",
+                "show": "500k+"
+            }
         ]
     },
     {
-      "Name": "Tags",
-      "Array": 
-        [
-            "Đồ nữ", 
-            "Đồ nam", 
-            "Giày",
-            "Đồng hồ" 
+        "name": "tag",
+        "show": "Tags",
+        "Object": [
+            {
+                "name": "default-tag",
+                "show": "Tất cả"
+            },
+            {
+                "name": "men",
+                "show": "Đồ nam"
+            },
+            {
+                "name": "woman",
+                "show": "Đồ nữ"
+            },
+            {
+                "name": "shoe",
+                "show": "Giày"
+            },
+            {
+                "name": "watch",
+                "show": "Đồng hồ"
+            },
+            {
+                "name": "hat",
+                "show": "Mũ"
+            }
         ]
     }
-  ]
+]

@@ -4,19 +4,19 @@
         "Show": "Trang chủ"
     },
     {
-        "Name": "Shop",
+        "Name": "shop",
         "Show": "Shop"
     },
     {
-        "Name": "detail",
+        "Name": "blog",
         "Show": "Blog"
     },
     {
-        "Name": "About",
+        "Name": "about",
         "Show": "Về chúng tôi"
     },
     {
-        "Name": "Contact",
+        "Name": "contact",
         "Show": "Liên hệ"
     }
 ]
